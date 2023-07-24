@@ -1,0 +1,246 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+}
+
+/* NAVBAR */
+
+.navbar {
+    transition: all 0.5s;
+}
+.navbar-scrolled {
+    background:#382806;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-nav a{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 510;
+    word-spacing: 2px;
+    justify-content: space-between;
+    z-index: 100000;
+    padding: 0 100px;
+}
+
+.nav-link {
+    position:relative;
+}
+
+.nav-link::after{
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: darkorange;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+
+.nav-link:hover::after {
+    content: '';
+    opacity: 1;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-brand:hover{
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #fff;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+.navbar-toggler{
+    padding: 1px 5px;
+    font-style: 18px;
+    line-height: 0.4;
+    background: #56524b4a;
+}
+
+
+/* CAROUSEL */ 
+
+
+.carousel-item {
+    height: 80vh;
+    min-height: 300px;
+}
+
+.carousel {
+    background: linear-gradient(to right,rgba(141, 105, 26, 0.514),rgba(141, 105, 26, 0.151)),url(../img/holding1.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.carousel-caption {
+    border: #fdfdfc 10px solid;
+    border-radius: 15px;
+   text-align: center;
+   bottom: 100px;
+}
+
+.carousel-caption h5 {
+    font-size: 65px;
+    font-family: "Lucida handwriting", cursive;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    font-weight: 0.5rem;
+}
+
+.carousel-caption p {
+    width: auto;
+    margin: auto;
+    font-size: 24px;
+    line-height: 1.9;
+    font-family: "Papyrus", fantasy;
+
+}
+
+.carousel-caption a{
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #B9891C;
+    border-radius: 10px;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #000;
+    margin-top: 10px;
+}
+
+/* WELCOME PAGE */
+.welcome{
+    padding: 50px;
+    background: #382806;
+
+}
+.maininfo::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to top, transparent, #fff, #fff, transparent);
+    white-space: pre-wrap;
+}
+.maininfo{
+    padding: 50px;  
+    background: #5e4201;
+    color:#fff;
+    font-size: 20px;
+}
+
+.maininfo p{
+    margin-top: 20px;
+    font-size: 22px;
+    word-spacing: 2px;
+}
+.about{
+    padding: 20px ;
+    background: #382806;
+    text-align: justify;
+    font-size: 20px;
+    color: #fff;
+}
+.card-body{
+    background: #382806;
+
+}
+.card-title{
+    font-family: "Papyrus", fantasy;
+    text-align: center;
+    line-height: 1.9;
+    font-size: 22px;
+    font-weight: 0.5rem;
+}
+.card-text{
+    line-height: 1.9;
+    font-size: 20px;
+    font-weight: 0.5rem;
+    letter-spacing: 0.05rem;
+}
+.abt h5 p{
+    background: linear-gradient(to top, transparent, #B9891C, #B9891C, transparent) #5e4201;
+    color: #fff;
+}
+
+.bsf{
+    padding: 20px ;
+    background-color: #B5AA99;
+    text-align: justify;
+    font-size: 20px;
+    color:white;
+    background-color: #232301;
+    margin-bottom: 0.5rem;
+}
+
+.contact{
+    padding: 20px ;
+    background-color: #382806;
+    text-align: justify;
+    font-size: 20px; 
+    color: #fff;
+}
+
+.footer{
+    background:#382806;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+/* MEDIA QUERRY */
+
+@media only screen and (max-width: 912px){
+
+    .navbar-nav{
+        text-align: center;
+        background: rgba(43, 43, 43, 0.5);
+    }
+    .carousel-item img{
+        max-height: 580px;
+    }
+    .carousel-caption{
+        bottom: 165px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .abt {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .lfbst {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .lfbst img{
+        max-height: 240px;
+    }
+    .ycruh {
+        width:100%;
+        padding-top: 20px;
+    }
+}
